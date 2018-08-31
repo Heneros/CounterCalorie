@@ -6,8 +6,8 @@ import {
   mealInputMsg,
   caloriesInputMsg,
   saveMealMsg,
-  deleteMealMsg,
   editMealMsg,
+  deleteMealMsg,
 } from './Update';
 
 const {
