@@ -1,45 +1,27 @@
 {
-<<<<<<< HEAD
-  "name": "counter calories",
+  "name": "Counter calories",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --output-public-path=/build/  --mode development --progress --open --hot",
+    "start": "webpack-dev-server --output-public-path=/build/  --mode development --progress --hot",
     "build": "webpack --mode production --progress"
-=======
-  "name": "caloriecounter",
-  "version": "1.0.0",
-  "description": "Calorie Counter App",
-  "scripts": {
-    "start": "webpack-dev-server --open"
->>>>>>> d3d892d5bf45b9b596bc915043904debb9c4d0ca
   },
   "author": "Heneros",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.0",
-<<<<<<< HEAD
     "babel-loader": "^7.1.5",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-0": "^6.24.1",
-=======
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.1",
-    "webpack": "^3.10.0",
->>>>>>> d3d892d5bf45b9b596bc915043904debb9c4d0ca
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "hyperscript-helpers": "^3.0.3",
     "ramda": "^0.25.0",
     "virtual-dom": "^2.1.1",
-<<<<<<< HEAD
     "webpack": "^4.16.1",
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.4"
-=======
-    "webpack-dev-server": "^2.9.4"
->>>>>>> d3d892d5bf45b9b596bc915043904debb9c4d0ca
   }
 }
