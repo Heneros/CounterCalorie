@@ -1,22 +1,22 @@
 {
-  "name": "Counter calories",
+  "name": "babel_webpack_starter",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --output-public-path=/build/  --mode development --progress --hot",
+    "start": "webpack-dev-server --output-public-path=/build/  --mode development --progress --open --hot",
     "build": "webpack --mode production --progress"
   },
-  "author": "Heneros",
+  "author": "Heneris",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-0": "^6.24.1",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "hyperscript-helpers": "^3.0.3",
     "ramda": "^0.25.0",
     "virtual-dom": "^2.1.1",

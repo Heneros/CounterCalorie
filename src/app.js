@@ -1,10 +1,18 @@
-const greeting = 'Hello World';
-console.log(greeting);
+import {h, diff, patch } from 'virtual-dom';
+import createElement from 'virtual-dom/create-element';
 
-const getData = async (url) => {
-  const response = await fetch(url);
-  const result = await response.json();
-  console.log(result);
-};
+function app(initModel, update, view, node){
+ let model = initModel;
+ let currentView = view(dispatch, model);
+ let rootNode = createElement(currentView);
+ node.appendChild(rootNode);
+ function dispatch(msg){
+ model = update(msg, model);
+ const updateView = view(dispatch, model);
+ const patches = diff(currentView, updateView);
+ rootNode = patch(rootNode, patches);
+ currentView = updateView;
+  }
+}
 
-getData('https://jsonplaceholder.typicode.com/posts');
+export default app;

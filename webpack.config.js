@@ -1,8 +1,12 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.js',
-  devtool: 'inline-source-map',
+  entry: {
+    app: [
+      'babel-polyfill',
+      './src/index.js',
+    ],
+  },
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'app.bundle.js',
@@ -12,9 +16,8 @@ module.exports = {
         test: /\.js?$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
-        options: {
-           presets: ['env', 'stage-0'],
-           plugins: [require('babel-plugin-transform-object-rest-spread')],
+        query: {
+           presets: ['env', 'stage-0']
         }
     }]
   }
